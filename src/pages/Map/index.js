@@ -53,8 +53,8 @@ const MapData = () => {
         <GoogleMapReact
           bootstrapURLKeys={{ key: 'AIzaSyCxs0m6LclVWmc1cfrePk-dt41lqJzYrzQ' }}
           defaultCenter={{
-            lat: -46.868914498191806,
-            lng: -24.178939209047936,
+            lat: -46.86,
+            lng: -24.17,
           }}
           defaultZoom={14}
         >
