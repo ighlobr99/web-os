@@ -326,7 +326,7 @@ const ModalItem = ({ handleCloseModal, open, item = null, getItens }) => {
                 beatch_id: item && item.beatch_id ? item.beatch_id : '',
                 matrix_id: item && item.matrix_id ? item.matrix_id : '',
                 tech_id: item && item.tech_id ? item.tech_id : '',
-                type: item && item.type ? item.type : '',
+                type: item && item.type ? item.type : 'simple',
                 thermometer_id:
                   item && item.thermometer_id ? item.thermometer_id : '',
                 status: item && item.status ? item.status : '',
