@@ -56,7 +56,7 @@ const MapData = () => {
             lat: -23.9991,
             lng: -46.4133,
           }}
-          defaultZoom={14}
+          defaultZoom={1}
         >
           {data && data.length
             ? data.map(mapData => (
