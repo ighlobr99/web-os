@@ -60,11 +60,10 @@ const MapData = () => {
         >
           {data && data.length
             ? data.map(mapData => (
-                <MapItemData>
+                <MapItemData lat={mapData.lat} lng={mapData.long}>
                   <img src={treeImg} alt={`Praia ${mapData.name}`} width="30" />
                   <Button
-                    lat={mapData.lat}
-                    lng={mapData.long}
+                    
                     text={mapData.name}
                     item={mapData}
                     handleModal={handleModal}
