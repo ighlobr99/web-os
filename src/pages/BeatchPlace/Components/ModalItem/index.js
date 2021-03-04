@@ -153,7 +153,7 @@ const ModalItem = ({ handleCloseModal, open, item = null, getItens }) => {
                     required
                     select
                     onChange={handleChange}
-                    label={language ? 'Beatch' : 'Nome'}
+                    label={language ? 'Beatch' : 'Nome da praia'}
                     variant="outlined"
                     InputLabelProps={{
                       shrink: true,
