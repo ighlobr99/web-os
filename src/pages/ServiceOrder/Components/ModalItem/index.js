@@ -114,7 +114,7 @@ const ModalItem = ({ handleCloseModal, open, item = null, getItens }) => {
 
   const handleSaveClasse = useCallback(
     async data => {
-      if (selecteds.length <= 0) {
+      if (!selecteds || selecteds.length  === 0 || selecteds.length< 0) {
         addToast({
           type: 'error',
           title: language ? 'Select a place' : 'Selecione um ponto da praia',
