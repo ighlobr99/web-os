@@ -72,6 +72,7 @@ const ModalItem = ({ handleCloseModal, open, item = null, getItens }) => {
         api
           .post(`beatch`, {
             ...data,
+            status: true,
           })
           .then(() => {
             addToast({
