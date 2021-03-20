@@ -35,11 +35,7 @@ const ModalItem = ({ handleCloseModal, open, item = null, getItens }) => {
     email: Yup.string().required(
       language ? 'Enter the name of the user.' : 'Informe o email do Usuário'
     ),
-    document: Yup.string().required(
-      language
-        ? 'Enter the document of the user.'
-        : 'Informe o documento do Usuário'
-    ),
+    
     password: Yup.string().required(
       language
         ? 'Enter the password of the user.'
@@ -163,7 +159,7 @@ const ModalItem = ({ handleCloseModal, open, item = null, getItens }) => {
           validationSchema={schema}
           initialValues={{
             name: item && item.name ? item.name : '',
-            document: item && item.document ? item.document : '',
+          
             phone: item && item.phone ? item.phone : '',
             email: item && item.email ? item.email : '',
             password: '',
@@ -196,30 +192,7 @@ const ModalItem = ({ handleCloseModal, open, item = null, getItens }) => {
                     <ErrorMessageText>{errors.name}</ErrorMessageText>
                   ) : null}
                 </Grid>
-                <Grid item xs={12} sm={12} md={12}>
-                  <InputMask
-                    mask="999.999.999-99"
-                    fullWidth
-                    value={values.document}
-                    name="document"
-                    label={language ? 'Docuement' : 'CPF'}
-                    onChange={handleChange}
-                  >
-                    {inputProps => (
-                      <TextFieldStyled
-                        {...inputProps}
-                        fullWidth
-                        variant="outlined"
-                        InputLabelProps={{
-                          shrink: true,
-                        }}
-                      />
-                    )}
-                  </InputMask>
-                  {errors.document && touched.document ? (
-                    <ErrorMessageText>{errors.document}</ErrorMessageText>
-                  ) : null}
-                </Grid>
+                
                 <Grid item xs={12} sm={12} md={12}>
                   <TextFieldStyled
                     value={values.sectors_id}

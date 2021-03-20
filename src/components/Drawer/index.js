@@ -67,13 +67,13 @@ const DrawerMenu = ({ handleDrawer, visibleDrawer, drawerWidth, location }) => {
       },
       {
         id: 6,
-        name: language ? 'Beatches' : 'Praia',
+        name: language ? 'Beach' : 'Praia',
         icon: inboxIcon,
         link: '/dashboard/beatches',
       },
       {
         id: 7,
-        name: language ? 'Beatches places' : 'Local de praia',
+        name: language ? 'Beach places' : 'Local de praia',
         icon: inboxIcon,
         link: '/dashboard/beatches_places',
       },

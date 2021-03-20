@@ -3,7 +3,7 @@ import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import { Icon, Grid, IconButton, InputBase, Paper } from '@material-ui/core';
-import DeleteIcon from '@material-ui/icons/Delete';
+import DeleteIcon from '@material-ui/icons/Remove';
 import SearchIcon from '@material-ui/icons/Search';
 
 import MaterialTable from 'material-table';
