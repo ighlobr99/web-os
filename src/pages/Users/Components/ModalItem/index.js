@@ -164,7 +164,7 @@ const ModalItem = ({ handleCloseModal, open, item = null, getItens }) => {
             email: item && item.email ? item.email : '',
             password: '',
             status: item ? item.status : true,
-            birth_date: item && item.birth_date ? item.birth_date : '',
+            
             address: item && item.address ? item.address : '',
             level: item && item.level ? item.level : '',
             sectors_id: item && item.sectors_id ? item.sectors_id : '',
@@ -281,24 +281,7 @@ const ModalItem = ({ handleCloseModal, open, item = null, getItens }) => {
                     <ErrorMessageText>{errors.phone}</ErrorMessageText>
                   ) : null}
                 </Grid>
-                <Grid item xs={12} sm={12} md={12}>
-                  <TextFieldStyled
-                    value={values.birth_date}
-                    fullWidth
-                    id="birth_date"
-                    name="birth_date"
-                    onChange={handleChange}
-                    type="date"
-                    label={language ? 'Birth date' : 'Data de nascimento'}
-                    variant="outlined"
-                    InputLabelProps={{
-                      shrink: true,
-                    }}
-                  />
-                  {errors.birth_date && touched.birth_date ? (
-                    <ErrorMessageText>{errors.birth_date}</ErrorMessageText>
-                  ) : null}
-                </Grid>
+                
                 <Grid item xs={12} sm={12} md={12}>
                   <TextFieldStyled
                     value={values.address}
